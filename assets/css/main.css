@@ -10,8 +10,16 @@
   background-color: #fff; 
   height: 100vh;
   width: 100%;
+   /* position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px; */
   /* opacity:.6; */
 }
+
+
 .container{
     border-radius: 10px;
     display: grid;
@@ -69,7 +77,7 @@
 
 .item-cena:nth-of-type(1){
     font-size: 30px;
-    background-color: #E59866;
+    background: linear-gradient(#BA4A00, #E59866,#F6DDCC  );
     grid-column: 1 / 4;
 }
 .item-cena:nth-of-type(2){
@@ -88,8 +96,8 @@
 
 .item-card {
     background-color: transparent;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     perspective: 1000px;
   }
   
@@ -124,4 +132,44 @@
     background-color: lightcoral;
     color: white;
     transform: rotateY(180deg);
+  }
+
+  .text-tittle{
+    background-color: white;
+    color: black;
+    font-size: 7vw; 
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-0%, -0%);
+    mix-blend-mode: screen;
+  }
+
+
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
   }
